@@ -1,1 +1,3 @@
-{"collection":"index","current_id":"index","form_id":null,"id":"index","legacy_id":"index","parent":null,"role":"trunk","source":"index.md","title":"Corgi Fever Archive"}
+{"collection": "about", "form_id": null, "id": "about", "legacy_id": "about", "parent": null, "role": "trunk", "source": "about.md", "title": "About"}
+{"collection": "index", "form_id": null, "id": "index", "legacy_id": "index", "parent": null, "role": "trunk", "source": "index.md", "title": "Corgi Fever"}
+{"collection": "symptoms", "form_id": null, "id": "symptoms", "legacy_id": "symptoms", "parent": null, "role": "trunk", "source": "symptoms.md", "title": "Symptoms"}

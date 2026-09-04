@@ -1,13 +1,19 @@
-# Corgi Fever Archive
+# Corgi Fever
 
-Corgi Fever (`corgifever.com`) is a static archive compiled by [Boris](https://github.com/drawmeanelephant/boris) using the Trunk/Satellite graph model and deployed to Cloudflare Pages at [https://corgifever.com](https://corgifever.com).
+Corgi Fever (`corgifever.com`) is a tiny boutique site about the fictional ailment known as **corgi fever**, compiled by [Boris](https://github.com/drawmeanelephant/boris) and deployed to Cloudflare Pages at [https://corgifever.com](https://corgifever.com).
+
+It is deliberately small — three pages, no registry, no authority claims:
+
+* `content/index.md` — what corgi fever is (fiction)
+* `content/symptoms.md` — the reported signs (lore, not diagnosis)
+* `content/about.md` — what this site is and is not
 
 ---
 
 ## Production Deployment
 
 * **Source of Record**: `drawmeanelephant/corgifever.com`
-* **Compiler**: [Boris](https://github.com/drawmeanelephant/boris) (CI tracks the `afterparty` branch)
+* **Compiler**: [Boris](https://github.com/drawmeanelephant/boris) (CI tracks the `main` branch)
 * **Production Theme**: Cantilever (`themes/cantilever/`)
 * **Output Path**: `dist/cantilever/`
 * **Host**: Cloudflare Pages (`corgifever`)
@@ -41,11 +47,10 @@ Primary build and publishing scripts:
 ## Repository Layout
 
 ```text
-content/                    # Source Markdown corpus
+content/                    # Three-page boutique corpus (index, symptoms, about)
 themes/cantilever/         # Primary production theme and templates
-metadata/id-policy.json    # Canonical identity rules
-metadata/id-map.jsonl      # Legacy-to-canonical migration map
-scripts/corgi_ids.py       # ID migration and validation helper
+metadata/id-policy.json    # Boutique identity rules (trunk slugs, no form IDs)
+metadata/id-map.jsonl      # Identity map
 scripts/corgi-build.sh     # Production HTML build script
 scripts/corgi-publish.sh   # HTML, IR, RAG, Context, and llms publishing script
 bin/validate_graph.sh      # Graph integrity and publication gate

@@ -12,7 +12,7 @@ This document is the canonical operational guide for all AI coding agents workin
 * **Public URL**: `https://corgifever.com`
 * **Compiler**: Boris is an external Zig static site compiler, provided locally or in execution environments via `BORIS_BIN`.
 * **Helper Scripts**: Python scripts in `scripts/` perform bounded validation, auditing, metadata processing, and publishing tasks.
-* **Authoring Tree**: `content/` is the canonical source of record for all corgi records, lineage notes, and care guides.
+* **Authoring Tree**: `content/` is the canonical source of record — three boutique pages (`index`, `symptoms`, `about`) about the fictional ailment.
 * **Production Theme**: `themes/cantilever/` houses the production design and layout templates.
 * **Generated Outputs**: `dist/`, `publish/`, `site/`, and local compiler binaries (`bin/boris*`) are build artifacts and must never be committed to git.
 
@@ -58,8 +58,8 @@ Boris enforces a **closed and constrained** frontmatter schema.
 * **Structural Hierarchy**: Hierarchy is declared strictly using `parent`.
 * **Semantic Connections**: Non-hierarchical relationships use Boris `relations`.
 * **Trunk & Satellite Model**:
-  * Collection root pages function as **Trunks** (`corgis`, `lineage`, `care`, `reference`, `guides`, `releases`, `changelog`).
-  * Individual records function as **Satellites** (e.g. `corgis/CRG-0001`).
+  * This site is boutique trunk-only: `index`, `symptoms`, `about` (no parent, no satellites).
+  * Do not reintroduce registry satellites (`corgis/CRG-XXXX`, etc.) without asking.
 
 ---
 

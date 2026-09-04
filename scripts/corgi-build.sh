@@ -20,13 +20,6 @@ python3 scripts/audit_markdown_links.py "$CONTENT_DIR"
   --html-dir "$DIST_DIR" \
   --sitemap \
   --site-url "$SITE_URL" \
-  --layout-rule default glob:care/* "$THEME/layouts/compact.html" \
-  --layout-rule default glob:changelog/* "$THEME/layouts/compact.html" \
-  --layout-rule default glob:corgis/* "$THEME/layouts/compact.html" \
-  --layout-rule default glob:guides/* "$THEME/layouts/compact.html" \
-  --layout-rule default glob:lineage/* "$THEME/layouts/compact.html" \
-  --layout-rule default glob:reference/* "$THEME/layouts/compact.html" \
-  --layout-rule default glob:releases/* "$THEME/layouts/compact.html" \
   --jobs "$BORIS_JOBS"
 
 python3 scripts/audit_html_ids.py "$DIST_DIR"
