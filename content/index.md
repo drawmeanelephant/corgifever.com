@@ -2,27 +2,20 @@
 title: "Corgi Fever"
 id: index
 status: published
-tags: ["corgi", "pembroke", "cardigan", "home"]
+tags: ["corgi-fever", "home"]
 ---
 
 # Corgi Fever
 
-Welcome to **Corgi Fever** (`corgifever.com`), the definitive static archive and registry for Pembroke and Cardigan Welsh Corgis, lineage tracking, care guides, and corgi lore.
+**Corgi Fever** is a fictional ailment. It describes what happens when a person sees one corgi too many and never quite recovers.
+
+The usual course: a smile, a stop on the sidewalk, a longer look than strictly necessary. Then the low silhouette starts showing up everywhere — in queues, in parks, in other people's photographs.
+
+This is a small boutique site about that condition. Three pages, no more. It keeps no registry, tracks no bloodlines, and proves nothing.
 
 ---
 
-## Collections
+## Browse
 
-- **[Corgis](corgis.md)**: Dog profiles and registry (`CRG-XXXX`).
-- **[Lineage](lineage.md)**: Pedigree records and bloodline histories (`LIN-XXXX`).
-- **[Care & Health](care.md)**: Nutrition, joint care, and coat maintenance (`CARE-XXXX`).
-- **[Reference](reference.md)**: Breed standards, coloration codes, and health indexes (`CREF-XXXX`).
-- **[Guides](guides.md)**: Training, socialization, and agility walkthroughs (`CGDE-XXXX`).
-- **[Releases](releases.md)**: Registry updates and standard updates (`CREL-XXXX`).
-- **[Changelog](changelog.md)**: Site updates and record additions (`CCHG-XXXX`).
-
----
-
-## Archival & Graph Architecture
-
-This site is statically compiled using **Boris** and deployed to Cloudflare Pages.
+- **[Symptoms](symptoms.md)**: the commonly reported signs, as told by sufferers.
+- **[About](about.md)**: what this little site is, and what it is not.

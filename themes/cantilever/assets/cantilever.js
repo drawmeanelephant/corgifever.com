@@ -132,17 +132,17 @@
 
       if (!query) {
         if (indexFailed) {
-          setStatus('Search index unavailable. Browse the collections.');
+          setStatus('Search index unavailable. Browse the three pages.');
         } else if (indexReady) {
-          setStatus(documents.length ? 'Search ' + documents.length + ' records. Press / to focus.' : 'Search index is empty.');
+          setStatus(documents.length ? 'Search the three pages. Press / to focus.' : 'Search index is empty.');
         } else {
-          setStatus('Loading archive index…');
+          setStatus('Loading little index…');
         }
         return;
       }
 
       if (!indexReady) {
-        setStatus(indexFailed ? 'Search index unavailable. Browse the collections.' : 'Search index is still loading…');
+        setStatus(indexFailed ? 'Search index unavailable. Browse the three pages.' : 'Search index is still loading…');
         return;
       }
 
@@ -207,7 +207,7 @@
         documents = [];
         indexFailed = true;
         clearResults();
-        setStatus('Search index unavailable. Browse the collections.');
+        setStatus('Search index unavailable. Browse the three pages.');
       });
   }
 
